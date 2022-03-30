@@ -21,6 +21,7 @@ function Login(props) {
 
     return (
         <div className="div-login">
+            <h1 id="pso-naslov">Privatna stomatološka ordinacija - WHITE TEETH</h1>
             <h1 id="login-naslov">Login</h1>
             <LoginForm login={prijava} />
         </div>

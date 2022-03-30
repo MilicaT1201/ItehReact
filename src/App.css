@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
   background-color: #fffff6;
-  font-family: 'Sarpanch',
-    sans-serif;
+  font-family: 'Source Code Pro',
+    monospace;
 }
 
 
@@ -50,7 +50,7 @@
 
 #login-naslov {
   font-size: 85px;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .loginforma {
@@ -61,4 +61,21 @@
 #loginbutton {
   width: 200px;
   font-size: 25px;
+}
+
+#submitbutton {
+  width: 200px;
+  font-size: 25px;
+}
+
+.forma {
+  width: 600px;
+  margin-left: 650px;
+  margin-top: 200px;
+}
+
+#pso-naslov {
+  margin-top: 25px;
+  font-size: 50px;
+  margin-bottom: -100px;
 }
