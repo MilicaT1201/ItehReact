@@ -1,11 +1,31 @@
 import KontaktForma from './KontaktForma';
+import swal from 'sweetalert';
 
 function Kontakt() {
 
-    function submit(naslov, email, poruka) {
-        console.log('Naslov ->  ' + naslov);
-        console.log('Email ->  ' + email);
-        console.log('Poruka -> ' + poruka);
+    function submit(naslov, email, brojTelefona, poruka) {
+
+        swal({
+            title: "Da li želite da pošaljete ovu poruku?",
+            text: 'Naslov poruke -> ' + naslov + '\n' +
+                'Email -> ' + email + '\n' +
+                'Broj telefona -> ' + brojTelefona + '\n' +
+                'Poruka -> ' + poruka,
+            icon: "warning",
+            dangerMode: true,
+            buttons: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Poruka je uspešno poslata!" + '\n \n' + "Očekujte odgovor u najkraćem roku.", {
+                        icon: "info",
+                    });
+                } else {
+                    swal("Molimo popunite formu opet.");
+                }
+            });
+
+
     }
 
     return (

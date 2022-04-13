@@ -17,8 +17,8 @@ function LoginForm(props) {
     return (
         <div className="div-loginform">
             <div className="loginforma">
-                <input type="text" className="form-control mt-4" value={username} onChange={handleUsername} />
-                <input type="password" className="form-control mt-3 mb-3" value={password} onChange={handlePassword} />
+                <input type="text" className="form-control mt-4" value={username} onChange={handleUsername} placeholder="Unesite username..." />
+                <input type="password" className="form-control mt-3 mb-3" value={password} onChange={handlePassword} placeholder="Unesite password..." />
                 <button onClick={() => props.login(username, password)} id="loginbutton" className="btn btn-primary">Login</button>
             </div>
         </div>
